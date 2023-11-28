@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0a67882c403e5f48b1dc93f7d50c85b, type: 3}
+  m_Name: RapidFire
+  m_EditorClassIdentifier: 
+  movementSpeed: 2
+  attackingRange: 6
+  attackRadius: 0
+  attackDamage: 0
+  attackCooldownTime: 0
+  attackSound: {fileID: 8300000, guid: e5f0a762c652f4065a1238d2febd38c6, type: 3}
+  bullet: {fileID: 1680344730821964942, guid: 37c320bd48d44d4468d62b6ffe4ee119, type: 3}
