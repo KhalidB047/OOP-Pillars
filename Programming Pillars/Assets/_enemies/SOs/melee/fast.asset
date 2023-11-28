@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 591de0348561ee8419dce8571c3cc07a, type: 3}
   m_Name: fast
   m_EditorClassIdentifier: 
-  movementSpeed: 3
+  movementSpeed: 2.5
   attackingRange: 2
   attackRadius: 1
   attackDamage: 3
