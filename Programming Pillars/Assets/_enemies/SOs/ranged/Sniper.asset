@@ -18,4 +18,4 @@ MonoBehaviour:
   attackDamage: 10
   attackCooldownTime: 4
   attackSound: {fileID: 8300000, guid: 81764b23e5b364bcdbebf662664d45f4, type: 3}
-  bullet: {fileID: 1680344730821964942, guid: 37c320bd48d44d4468d62b6ffe4ee119, type: 3}
+  bullet: {fileID: 8025198792858188867, guid: c130e87ae83d05746b0e262da17e304f, type: 3}
