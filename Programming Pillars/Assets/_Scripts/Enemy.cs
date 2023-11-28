@@ -30,6 +30,8 @@ public class Enemy : MonoBehaviour
 
     void Update()
     {
+        if (GameManager.gameMan.gameOver) return;
+
         if (attackReady && !onCooldown)
         {
             if (CheckDistance())

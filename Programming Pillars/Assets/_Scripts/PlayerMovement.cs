@@ -8,6 +8,8 @@ public class PlayerMovement : MonoBehaviour
     public float verticalInput;
     public float movementSpeed;
 
+    public bool canMove = true;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -20,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
         horizontalInput = Input.GetAxis("Horizontal");
         verticalInput = Input.GetAxis("Vertical");
 
-        MovePlayer();
+        if(canMove) MovePlayer();
     }
 
     public void MovePlayer()
