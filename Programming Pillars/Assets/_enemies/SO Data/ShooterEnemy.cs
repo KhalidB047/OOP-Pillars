@@ -11,6 +11,8 @@ public class ShooterEnemy : EnemyScriptableObject
 
     public override void Attack(Enemy enemy)
     {
+        if (GameManager.gameMan.gameOver) return;
+
         Instantiate(bullet, enemy.attackPoint.position, enemy.attackPoint.transform.rotation);
         enemy.source.PlayOneShot(attackSound);
 

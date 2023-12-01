@@ -7,6 +7,8 @@ using UnityEngine;
 public abstract class EnemyScriptableObject : ScriptableObject
 {
     [SerializeField] private float movementSpeed;
+    public float maxHealth;
+    public int score;
     public float attackingRange;
     public float attackRadius;
     public float attackDamage;

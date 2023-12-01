@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Tank
   m_EditorClassIdentifier: 
   movementSpeed: 2
-  attackingRange: 1
-  attackRadius: 1
+  maxHealth: 15
+  score: 10
+  attackingRange: 2.5
+  attackRadius: 2
   attackDamage: 20
-  attackCooldownTime: 1
+  attackCooldownTime: 4
   attackSound: {fileID: 8300000, guid: 626aeda33e0134a66a6257c865d0c5c0, type: 3}
+  attackParticles: {fileID: 4021103657954561961, guid: 5c755f9bc5253ea418e919994537dcc7, type: 3}

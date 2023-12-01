@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: RapidFire
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  maxHealth: 4
+  score: 6
   attackingRange: 6
   attackRadius: 0
   attackDamage: 0

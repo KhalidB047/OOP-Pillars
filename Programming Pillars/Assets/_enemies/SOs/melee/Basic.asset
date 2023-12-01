@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Basic
   m_EditorClassIdentifier: 
   movementSpeed: 1
+  maxHealth: 5
+  score: 2
   attackingRange: 1.5
   attackRadius: 0.5
   attackDamage: 5
   attackCooldownTime: 0
   attackSound: {fileID: 8300000, guid: 11c07a2f183894950b7b881a1fb66331, type: 3}
+  attackParticles: {fileID: 100000, guid: 3156817f64ec68948ad6bb26569b9ef5, type: 3}

@@ -28,7 +28,6 @@ public class PlayerHealth : MonoBehaviour
             currentHealth = 0f;
             healthText.text = "DEAD";
             healthSlider.value = 0f;
-            GetComponent<PlayerMovement>().canMove = false;
             GameManager.gameMan.GameOver();
         }
 

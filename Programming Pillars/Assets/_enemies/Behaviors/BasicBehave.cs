@@ -22,6 +22,7 @@ public class BasicBehave : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        if (GameManager.gameMan.gameOver) anim.ResetTrigger("Attack");
         if (enemy.CheckDistance())
         {
             if (!enemy.onCooldown)

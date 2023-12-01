@@ -13,8 +13,11 @@ MonoBehaviour:
   m_Name: Tough
   m_EditorClassIdentifier: 
   movementSpeed: 0.5
+  maxHealth: 8
+  score: 5
   attackingRange: 2
   attackRadius: 2
   attackDamage: 10
   attackCooldownTime: 3
   attackSound: {fileID: 8300000, guid: d7da440ad4f6c4e7489efd85844988d8, type: 3}
+  attackParticles: {fileID: 100000, guid: f06e78284f831ae469c74624ab5d513b, type: 3}

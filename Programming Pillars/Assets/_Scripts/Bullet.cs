@@ -7,6 +7,7 @@ public class Bullet : MonoBehaviour
     [SerializeField] private float speed;
     [SerializeField] private float damage;
     [SerializeField] private AudioClip hitSound;
+    [SerializeField] private GameObject hitParticles;
 
 
     void Start()
@@ -27,6 +28,8 @@ public class Bullet : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             other.gameObject.GetComponent<PlayerHealth>().TakeDamage(damage);
+            Instantiate(hitParticles, transform.position, Quaternion.identity);
+
             Destroy(gameObject);
         }
     }

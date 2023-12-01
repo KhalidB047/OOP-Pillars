@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: BasicShooter
   m_EditorClassIdentifier: 
   movementSpeed: 3
+  maxHealth: 4
+  score: 3
   attackingRange: 5
   attackRadius: 0
   attackDamage: 2

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Sniper
   m_EditorClassIdentifier: 
   movementSpeed: 2
+  maxHealth: 2
+  score: 7
   attackingRange: 10
   attackRadius: 0
   attackDamage: 10
