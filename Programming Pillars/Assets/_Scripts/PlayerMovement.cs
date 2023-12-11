@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -20,6 +21,9 @@ public class PlayerMovement : MonoBehaviour
 
     [SerializeField] private LayerMask floorMask;
     [SerializeField] private Transform bodyT;
+
+    [SerializeField] private TextMeshProUGUI speedText;
+
 
     // Start is called before the first frame update
     void Start()
@@ -78,6 +82,7 @@ public class PlayerMovement : MonoBehaviour
     {
         movementSpeed += speed;
         if (movementSpeed > maxMovementSpeed) movementSpeed = maxMovementSpeed;
+        speedText.text = $"{movementSpeed}";
     }
 
 

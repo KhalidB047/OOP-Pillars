@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using TMPro;
 
 public class PlayerAttack : MonoBehaviour
 {
@@ -17,6 +18,9 @@ public class PlayerAttack : MonoBehaviour
     [SerializeField] private GameObject shootParticles;
 
     private bool onCooldown = false;
+
+    [SerializeField] private TextMeshProUGUI rateOfFireText;
+    [SerializeField] private TextMeshProUGUI damageText;
 
 
     private AudioSource source;
@@ -110,6 +114,7 @@ public class PlayerAttack : MonoBehaviour
     {
         shootCooldownTime -= timeReduction;
         if (shootCooldownTime < minShootCooldownTime) shootCooldownTime = minShootCooldownTime;
+        rateOfFireText.text = (1f / shootCooldownTime).ToString("0.00");
     }
 
 
@@ -117,6 +122,7 @@ public class PlayerAttack : MonoBehaviour
     {
         damage += addedDamage;
         if (damage > maxDamage) damage = maxDamage;
+        damageText.text = $"{damage}";
     }
 
 }
